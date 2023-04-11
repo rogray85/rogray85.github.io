@@ -1,0 +1,13 @@
+name: Home_Prices
+title: Home_Prices
+username:
+account: 8rj3po-oneal-gray
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8812805
+bundleId: 7072937
+url: https://8rj3po-oneal-gray.shinyapps.io/Home_Prices/
+when: 1681168525.34598
+lastSyncTime: 1681168525.346
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+---
+title: "About Me Page"
+output: html_document
+date: "2023-03-21"
+---
+
+Hello, my name is O'Neal Gray and I'm from Dallas, TX. My interests include golfing and learning to code. Currently, I work at SFRC Holdings, a company that specializes in developing self-storage properties. I graduated from the University of Mississippi.
+
+The other tabs represent work/analyses that I have completed. Please check them out!
+
+![Our Dogs Bella and Luna!](dogs.jpg)
+
