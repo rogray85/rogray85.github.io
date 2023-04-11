@@ -6,7 +6,7 @@ navbar:
       href: index.html
     - text: "Beers and Breweries"
       href: BeersAndBreweries.html
-    - text: "test App"
+    - text: "Century 21 Ames R Shiny App"
       href: https://8rj3po-oneal-gray.shinyapps.io/Housing/?_ga=2.74729554.1922013178.1681168560-2106839021.1681168560
-    - text: "MSDS 6371 Final Project"
+    - text: "MSDS 6371 Final Project Paper"
       href: Stat_paper.pdf
