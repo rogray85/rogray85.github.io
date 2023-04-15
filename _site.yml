@@ -10,3 +10,8 @@ navbar:
       href: https://8rj3po-oneal-gray.shinyapps.io/Housing/?_ga=2.74729554.1922013178.1681168560-2106839021.1681168560
     - text: "MSDS 6371 Final Project Paper"
       href: Stat_paper.pdf
+    - text: "CaseStudy2DDS RMD File"
+      href: test.html
+    - text: "CaseStudy2DDS R Shiney App"
+      href: https://8rj3po-oneal-gray.shinyapps.io/DDSAnalytics/?_ga=2.187157803.206245197.1681570392-2106839021.1681168560
+      
