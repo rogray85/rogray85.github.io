@@ -15,13 +15,13 @@
 
 <title>DDS Final</title>
 
-<script src="test_files/header-attrs-2.21/header-attrs.js"></script>
-<script src="test_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="test_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="test_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="test_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="test_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <style>h1 {font-size: 34px;}
        h1.title {font-size: 38px;}
        h2 {font-size: 30px;}
@@ -31,9 +31,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="test_files/navigation-1.1/tabsets.js"></script>
-<link href="test_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="test_files/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -256,6 +256,15 @@ $(document).ready(function () {
 <li>
   <a href="Stat_paper.pdf">MSDS 6371 Final Project Paper</a>
 </li>
+<li>
+  <a href="test.html">CaseStudy2DDS RMD File</a>
+</li>
+<li>
+  <a href="https://8rj3po-oneal-gray.shinyapps.io/DDSAnalytics/?_ga=2.187157803.206245197.1681570392-2106839021.1681168560">CaseStudy2DDS R Shiney App</a>
+</li>
+<li>
+  <a href="https://youtu.be/rpJLl0FNSu8">CaseStudy2DDS YouTube Video</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -316,16 +325,6 @@ src="test_files/figure-html/years_at_company-1.png" /><!-- --></p>
 <p><img
 src="test_files/figure-html/attrition_monthly_income-1.png" /><!-- --></p>
 <p>Monthly Income by Attrition and Gender</p>
-<pre class="r"><code>ggplot(data2, aes(x = Attrition, y = MonthlyIncome, fill = factor(Gender))) +
-  geom_boxplot(color = &quot;black&quot;, alpha = 0.7) +
-  scale_fill_manual(values = c(&quot;blue&quot;, &quot;pink&quot;), labels = c(&quot;Male&quot;, &quot;Female&quot;)) +
-  theme_minimal() +
-  labs(title = &quot;Monthly Income by Attrition and Gender&quot;, subtitle = &quot;Distribution of Monthly Income by Attrition Status and Gender&quot;, x = &quot;Attrition Status&quot;, y = &quot;Monthly Income (USD)&quot;, fill = &quot;Gender&quot;) +
-  theme(plot.title = element_text(size = 20, face = &quot;bold&quot;),
-        plot.subtitle = element_text(size = 14),
-        axis.title.x = element_text(size = 16),
-        axis.title.y = element_text(size = 16),
-        axis.text = element_text(size = 14))</code></pre>
 <p><img
 src="test_files/figure-html/monthly_income_att_gender-1.png" /><!-- --></p>
 <p>Naive Bayes Model</p>
@@ -337,15 +336,6 @@ src="test_files/figure-html/monthly_income_att_gender-1.png" /><!-- --></p>
 <pre><code>## Sensitivity (Naive Bayes): 0.5</code></pre>
 <pre><code>## Specificity (Naive Bayes): 0.8356164</code></pre>
 <p>Naive Bayes Model with Laplace Adjustment</p>
-<pre class="r"><code># Build a new Naïve Bayes model with adjusted Laplace value
-nb_model_laplace &lt;- naiveBayes(Attrition ~ ., data = train_set, laplace = 2)
-
-# Make predictions with the new model
-predicted_labels_laplace &lt;- predict(nb_model_laplace, test_set[, -2])
-
-# Calculate new accuracy
-accuracy_laplace &lt;- sum(predicted_labels_laplace == actual_labels) / length(actual_labels)
-cat</code></pre>
 <pre><code>## function (..., file = &quot;&quot;, sep = &quot; &quot;, fill = FALSE, labels = NULL, 
 ##     append = FALSE) 
 ## {
@@ -362,7 +352,7 @@ cat</code></pre>
 ##         }
 ##     .Internal(cat(list(...), file, sep, fill, labels, append))
 ## }
-## &lt;bytecode: 0x10e69c5c0&gt;
+## &lt;bytecode: 0x140f62e40&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>ROC Curve for Naive Bayes Model</p>
 <pre><code>## Setting levels: control = No, case = Yes</code></pre>

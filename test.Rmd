@@ -136,7 +136,7 @@ ggplot(data2, aes(x = Attrition, y = MonthlyIncome, fill = Attrition)) +
 
 Monthly Income by Attrition and Gender
 
-```{r monthly_income_att_gender, echo=TRUE}
+```{r monthly_income_att_gender, echo=FALSE}
 ggplot(data2, aes(x = Attrition, y = MonthlyIncome, fill = factor(Gender))) +
   geom_boxplot(color = "black", alpha = 0.7) +
   scale_fill_manual(values = c("blue", "pink"), labels = c("Male", "Female")) +
@@ -179,7 +179,7 @@ cat("Specificity (Naive Bayes):", specificity_nb, "\n")
 
 Naive Bayes Model with Laplace Adjustment
 
-```{r laplace_adjustment, echo=TRUE}
+```{r laplace_adjustment, echo=FALSE}
 # Build a new Naïve Bayes model with adjusted Laplace value
 nb_model_laplace <- naiveBayes(Attrition ~ ., data = train_set, laplace = 2)
 

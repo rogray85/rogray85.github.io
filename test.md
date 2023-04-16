@@ -6,7 +6,7 @@ output:
   html_document:
     keep_md: true
     self_contained: false
-    output_file: DDSFinal.html
+    output_file: DDSFinal.
 layout: default
 ---
 
@@ -50,20 +50,6 @@ Attrition and Monthly Income
 
 Monthly Income by Attrition and Gender
 
-
-```r
-ggplot(data2, aes(x = Attrition, y = MonthlyIncome, fill = factor(Gender))) +
-  geom_boxplot(color = "black", alpha = 0.7) +
-  scale_fill_manual(values = c("blue", "pink"), labels = c("Male", "Female")) +
-  theme_minimal() +
-  labs(title = "Monthly Income by Attrition and Gender", subtitle = "Distribution of Monthly Income by Attrition Status and Gender", x = "Attrition Status", y = "Monthly Income (USD)", fill = "Gender") +
-  theme(plot.title = element_text(size = 20, face = "bold"),
-        plot.subtitle = element_text(size = 14),
-        axis.title.x = element_text(size = 16),
-        axis.title.y = element_text(size = 16),
-        axis.text = element_text(size = 14))
-```
-
 ![](test_files/figure-html/monthly_income_att_gender-1.png)<!-- -->
 
 Naive Bayes Model
@@ -91,18 +77,6 @@ Naive Bayes Model
 Naive Bayes Model with Laplace Adjustment
 
 
-```r
-# Build a new Naïve Bayes model with adjusted Laplace value
-nb_model_laplace <- naiveBayes(Attrition ~ ., data = train_set, laplace = 2)
-
-# Make predictions with the new model
-predicted_labels_laplace <- predict(nb_model_laplace, test_set[, -2])
-
-# Calculate new accuracy
-accuracy_laplace <- sum(predicted_labels_laplace == actual_labels) / length(actual_labels)
-cat
-```
-
 ```
 ## function (..., file = "", sep = " ", fill = FALSE, labels = NULL, 
 ##     append = FALSE) 
@@ -120,7 +94,7 @@ cat
 ##         }
 ##     .Internal(cat(list(...), file, sep, fill, labels, append))
 ## }
-## <bytecode: 0x10e69c5c0>
+## <bytecode: 0x140f62e40>
 ## <environment: namespace:base>
 ```
 
